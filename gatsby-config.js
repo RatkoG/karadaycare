@@ -6,11 +6,28 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-react-svg`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Londrina Solid`,
+            variants: [`300`, `400`, `900`],
+          },
+          {
+            family: `Open Sans`,
+            variants: [`400`, `400i`, `700`],
+          },
+        ],
       },
     },
     `gatsby-transformer-sharp`,
