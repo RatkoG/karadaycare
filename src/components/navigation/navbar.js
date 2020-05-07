@@ -4,7 +4,9 @@ import styled from "styled-components"
 import { Contained } from "../layout/elements"
 import InfoNavbar from "../navigation/infoNavbar"
 import Logo from "../UI/logo"
-import NavItems from "../navigation/navItems/navItems"
+import DesktopMenu from "./desktopMenu"
+import MobileMenu from "./mobileMenu/mobileMenu"
+
 import CloudIcon from "../../images/cloud.svg"
 
 const StyledHeader = styled.header`
@@ -49,7 +51,7 @@ const Navbar = () => {
         <Wrapper>
           <StyledCloud />
           <Logo />
-          <NavItems />
+          {Mobile ? <MobileMenu /> : <DesktopMenu />}
         </Wrapper>
       </Contained>
     </StyledHeader>
