@@ -39,9 +39,9 @@ const StyledImg = styled(Img)`
   width: 80%;
   height: 100%;
 `
-const StyledWave = styled(Wave)`
-  display: block;
-`
+// const StyledWave = styled(Wave)`
+//   display: block;
+// `
 
 const ChildrenImg = () => {
   const { file } = useStaticQuery(graphql`
