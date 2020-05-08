@@ -9,7 +9,7 @@ export const StyledSection = styled.section`
   min-height: ${({ fullHeight }) => (fullHeight ? "100vh" : "auto")};
 `
 export const Contained = styled.div`
-  max-width: 124rem;
+  max-width: 128rem;
   padding: 0 2rem;
   margin: 0 auto;
   width: 100%;
