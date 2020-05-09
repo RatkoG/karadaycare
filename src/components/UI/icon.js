@@ -18,6 +18,9 @@ const H3 = styled.h3`
 const IconSvg = styled.div`
   width: 13rem;
   height: 13rem;
+  & > svg {
+    width: 100%;
+  }
 `
 const Icon = props => {
   return (
