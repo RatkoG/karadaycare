@@ -2,12 +2,24 @@ import React from "react"
 // import { Link } from "gatsby"
 
 import Layout from "../components/layout/layout"
+import Home from "../sections/home"
+import Icons from "../sections/icons"
+import WhyUs from "../sections/whyus"
+import Program from "../sections/program"
+import Certified from "../sections/certified"
+import Footer from "../components/footer/footer"
 // import Layout from "../components/layout"
 // import Image from "../components/image"
 // import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
+    <Home />
+    <Icons />
+    <WhyUs />
+    <Program />
+    <Certified />
+    <Footer />
     {/* <SEO title="Home" />
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>

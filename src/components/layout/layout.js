@@ -5,7 +5,8 @@ import styled from "styled-components"
 
 import GlobalStyles from "../../utils/global"
 import theme from "../../utils/theme"
-import InfoNavbar from "../navigation/infoNavbar"
+import Contained from "./elements"
+import Navbar from "../navigation/navbar"
 
 const Wrapper = styled.div`
   display: flex;
@@ -16,7 +17,7 @@ const Wrapper = styled.div`
 `
 
 const StyledMain = styled.main`
-  margin-top: 6rem;
+  margin-top: 12rem;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -25,7 +26,7 @@ const StyledMain = styled.main`
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
     <Wrapper>
-      <InfoNavbar />
+      <Navbar />
       <StyledMain>{children}</StyledMain>
       <GlobalStyles />
     </Wrapper>
