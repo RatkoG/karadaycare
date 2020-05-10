@@ -16,6 +16,7 @@ background-image:  linear-gradient(to right, ${props =>
 const StyledContained = styled(Contained)`
   display: flex;
   justify-content: space-between;
+  margin: 5rem auto;
 `
 
 const Content = styled.div`
@@ -45,7 +46,6 @@ const Paragraph = styled.p`
 const WhyUs = () => {
   return (
     <Section>
-      {/* <Pattern /> */}
       <StyledContained>
         <Images />
         <Content>

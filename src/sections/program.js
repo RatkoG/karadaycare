@@ -18,6 +18,11 @@ const StyledSun = styled(Sun)`
   width: 18rem;
   height: 18rem;
 `
+
+const StyledContained = styled(Contained)`
+  margin: 5rem auto;
+`
+
 const StyledRocket = styled(Rocket)`
   position: absolute;
   top: 0;
@@ -35,19 +40,19 @@ const HeadingText = styled.h3`
 const Program = ({ text }) => {
   return (
     <Section>
-      <Contained>
+      <StyledContained>
         <StyledSun />
         <StyledRocket />
         <Heading>
           <H3 title="Things for kids " />
-          <H2 title="Our program " />
+          <H2 title="Our program" primary={true} />
           <HeadingText>
             Flexible schedule ajusted accorgin to the children’s needs and
             interes. The number one goal is leadning.
           </HeadingText>
         </Heading>
         <Features></Features>
-      </Contained>
+      </StyledContained>
     </Section>
   )
 }

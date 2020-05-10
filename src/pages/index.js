@@ -6,6 +6,7 @@ import Home from "../sections/home"
 import Icons from "../sections/icons"
 import WhyUs from "../sections/whyus"
 import Program from "../sections/program"
+import Certified from "../sections/certified"
 
 // import Layout from "../components/layout"
 // import Image from "../components/image"
@@ -17,6 +18,7 @@ const IndexPage = () => (
     <Icons />
     <WhyUs />
     <Program />
+    <Certified />
 
     {/* <SEO title="Home" />
     <h1>Hi people</h1>
