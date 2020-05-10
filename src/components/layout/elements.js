@@ -13,6 +13,7 @@ export const Contained = styled.div`
   padding: 0 2rem;
   margin: 0 auto;
   width: 100%;
+  position: relative;
 `
 export const Wrapper = styled.div`
   padding: 4rem 2rem;
@@ -20,6 +21,7 @@ export const Wrapper = styled.div`
   width: 100%;
   align-items: center;
   flex-direction: column;
+
   /* @media ${props => props.theme.mediaQueries.smaller} {
     padding: 3rem 1rem;
   } */
