@@ -31,6 +31,20 @@ const StyledCloud = styled(CloudIcon)`
   position: absolute;
   left: -3rem;
 `
+
+const InfoSection = styled.div`
+  font-size: 2rem;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & svg {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5rem;
+  }
+`
 const Navbar = () => {
   const [Mobile, setMobile] = useState(false)
 
@@ -47,7 +61,9 @@ const Navbar = () => {
   return (
     <StyledHeader>
       <Contained>
-        <InfoNavbar />
+        <InfoSection>
+          <InfoNavbar />
+        </InfoSection>
         <Wrapper>
           <StyledCloud />
           <Logo />
