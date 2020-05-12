@@ -19,7 +19,7 @@ const StyledP = styled.p`
   font-size: 3.4rem;
 `
 const NotFoundPage = () => (
-  <Layout>
+  <Layout noShowOnPage>
     {/* <SEO title="404: Not found" /> */}
     <Section fullHeight>
       <H1>NOT FOUND</H1>
