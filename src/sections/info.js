@@ -7,6 +7,7 @@ import {
   Wrapper,
 } from "../components/layout/elements"
 // import InfoNavbar from "../components/navigation/infoNavbar"
+import Boy from "../components/UI/boy"
 
 import LocationIcon from "../images/location.svg"
 import ClockIcon from "../images/clock.svg"
@@ -72,6 +73,7 @@ const Info = () => {
             Mon to Fri - 7:30am to 5:30pm
           </StylerP>
         </InfoSection>
+        <Boy />
       </StyledContained>
     </Section>
   )
