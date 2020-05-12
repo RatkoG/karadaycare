@@ -45,7 +45,7 @@ const InfoSection = styled.div`
     margin-right: 0.5rem;
   }
 `
-const Navbar = () => {
+const Navbar = ({ noShowOnPage }) => {
   const [Mobile, setMobile] = useState(false)
 
   const changeMobile = () => {
@@ -67,7 +67,11 @@ const Navbar = () => {
         <Wrapper>
           <StyledCloud />
           <Logo />
-          {Mobile ? <MobileMenu /> : <DesktopMenu />}
+          {Mobile ? (
+            <MobileMenu />
+          ) : (
+            <DesktopMenu noShowOnPage={noShowOnPage} />
+          )}
         </Wrapper>
       </Contained>
     </StyledHeader>

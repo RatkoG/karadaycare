@@ -23,10 +23,10 @@ const StyledMain = styled.main`
   flex: 1;
 `
 
-const Layout = ({ children }) => (
+const Layout = ({ noShowOnPage, children }) => (
   <ThemeProvider theme={theme}>
     <Wrapper>
-      <Navbar />
+      <Navbar noShowOnPage={noShowOnPage} />
       <StyledMain>{children}</StyledMain>
       <GlobalStyles />
     </Wrapper>
