@@ -39,7 +39,7 @@ const HeadingText = styled.h3`
 
 const Program = ({ text }) => {
   return (
-    <Section>
+    <Section id="program">
       <StyledContained>
         <StyledSun />
         <StyledRocket />
