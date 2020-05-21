@@ -8,10 +8,10 @@ import Home from "../sections/home"
 // import Image from "../components/image"
 // import SEO from "../components/seo"
 
-const TestingPage = () => (
+const Contact = () => (
   <Layout>
     <Home />
   </Layout>
 )
 
-export default TestingPage
+export default Contact

@@ -8,6 +8,7 @@ const theme = {
     text: "#4F4F4F",
     whiteIsh: "#F9F8F3",
     whiteWhySection: "rgba(249, 248, 243,0.9)",
+    green: "#6DD800",
   },
 }
 export default theme

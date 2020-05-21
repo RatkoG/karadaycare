@@ -7,7 +7,9 @@ import Icons from "../sections/icons"
 import WhyUs from "../sections/whyus"
 import Program from "../sections/program"
 import Certified from "../sections/certified"
+import Info from "../sections/info"
 import Footer from "../components/footer/footer"
+// import Title from "../components/UI/Title"
 // import Layout from "../components/layout"
 // import Image from "../components/image"
 // import SEO from "../components/seo"
@@ -19,6 +21,7 @@ const IndexPage = () => (
     <WhyUs />
     <Program />
     <Certified />
+    <Info />
     <Footer />
     {/* <SEO title="Home" />
     <h1>Hi people</h1>

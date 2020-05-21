@@ -9,10 +9,9 @@ const StyledH2 = styled.h2`
   font-weight: 400;
   text-transform: capitalize;
   margin-bottom: 1rem;
-  text-align:center;
 `
 
-const H2 = ({ title, primary }) => {
+const H1 = ({ title, primary }) => {
   return <StyledH2 primary={primary}>{title}</StyledH2>
 }
-export default H2
+export default H1

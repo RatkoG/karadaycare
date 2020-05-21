@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 
 import styled from "styled-components"
 import { Contained } from "../layout/elements"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import InfoNavbar from "../navigation/infoNavbar"
 import Logo from "../UI/logo"
 import DesktopMenu from "./desktopMenu"
@@ -31,7 +32,21 @@ const StyledCloud = styled(CloudIcon)`
   position: absolute;
   left: -3rem;
 `
-const Navbar = () => {
+
+const InfoSection = styled.div`
+  font-size: 2rem;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & svg {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5rem;
+  }
+`
+const Navbar = ({ noShowOnPage }) => {
   const [Mobile, setMobile] = useState(false)
 
   const changeMobile = () => {
@@ -47,11 +62,19 @@ const Navbar = () => {
   return (
     <StyledHeader>
       <Contained>
-        <InfoNavbar />
+        <InfoSection>
+          <InfoNavbar />
+        </InfoSection>
         <Wrapper>
           <StyledCloud />
-          <Logo />
-          {Mobile ? <MobileMenu /> : <DesktopMenu />}
+          <AnchorLink to="/#home">
+            <Logo />
+          </AnchorLink>
+          {Mobile ? (
+            <MobileMenu />
+          ) : (
+            <DesktopMenu noShowOnPage={noShowOnPage} />
+          )}
         </Wrapper>
       </Contained>
     </StyledHeader>

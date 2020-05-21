@@ -4,6 +4,7 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 const Section = styled(StyledSection)`
+  margin-top: auto;
   background: ${props => props.theme.colors.blueLight};
 `
 const CopyRight = styled.p`
@@ -33,7 +34,7 @@ const Footer = () => {
             KARA Family Day Care &copy; 2020 All Rights Reserved{" "}
           </CopyRight>
           <Links to="/testPage"> Terms &amp; Conditions </Links>
-          <Links to="/testPage"> Privacy Policy </Links>
+          <Links to="/privacy"> Privacy Policy </Links>
         </Wrapper>
       </Contained>
     </Section>

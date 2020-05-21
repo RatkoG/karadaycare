@@ -3,15 +3,16 @@ import React from "react"
 
 import Layout from "../components/layout/layout"
 import Home from "../sections/home"
-
+import Footer from "../components/footer/footer"
 // import Layout from "../components/layout"
 // import Image from "../components/image"
 // import SEO from "../components/seo"
 
-const TestingPage = () => (
+const Privacy = () => (
   <Layout>
     <Home />
+    <Footer />
   </Layout>
 )
 
-export default TestingPage
+export default Privacy
