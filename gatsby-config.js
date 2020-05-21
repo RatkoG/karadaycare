@@ -9,6 +9,12 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-svg`,
     {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -120,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,

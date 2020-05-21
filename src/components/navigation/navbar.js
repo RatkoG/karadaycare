@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 
 import styled from "styled-components"
 import { Contained } from "../layout/elements"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import InfoNavbar from "../navigation/infoNavbar"
 import Logo from "../UI/logo"
 import DesktopMenu from "./desktopMenu"
@@ -66,7 +67,9 @@ const Navbar = ({ noShowOnPage }) => {
         </InfoSection>
         <Wrapper>
           <StyledCloud />
-          <Logo />
+          <AnchorLink to="/#home">
+            <Logo />
+          </AnchorLink>
           {Mobile ? (
             <MobileMenu />
           ) : (

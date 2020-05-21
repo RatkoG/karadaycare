@@ -2,10 +2,11 @@ import React from "react"
 import styled from "styled-components"
 // import { Link } from "react-scroll"
 import { Link } from "gatsby"
-if (typeof window !== "undefined") {
-  // eslint-disable-next-line global-require
-  require("smooth-scroll")('a[href*="#"]')
-}
+// if (typeof window !== "undefined") {
+//   // eslint-disable-next-line global-require
+//   require("smooth-scroll")('a[href*="#"]')
+// }
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 const LINKS = ["Home", "About us", "Program", "Fees", "Contact"]
 
 const StyledNav = styled.nav`
@@ -33,7 +34,6 @@ const NavLi = styled.li`
       ? props => props.theme.colors.white
       : props => props.theme.colors.main};
   color: ${props => props.theme.colors.headingMain};
-  text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
   padding: 1rem 2rem;
@@ -41,21 +41,34 @@ const NavLi = styled.li`
   &:hover {
     color: ${props => props.theme.colors.headingMain};
   }
+  & > a {
+    text-decoration: none;
+  }
 `
 
 const NavItems = ({ mobile, clicked }) => {
   return (
     <StyledNav mobile={mobile}>
       <NavUl>
-        <NavLi>Home</NavLi>
-        <NavLi>About Us</NavLi>
         <NavLi>
-          <Link to="/#program">Program</Link>
+          <AnchorLink to="/#home" stripHash>
+            Home
+          </AnchorLink>
         </NavLi>
         <NavLi>
-          <Link to="/fees">Fees</Link>
+          <AnchorLink to="/about">About Us</AnchorLink>
         </NavLi>
-        <NavLi>Contact</NavLi>
+        <NavLi>
+          <AnchorLink to="/#program" stripHash>
+            Program
+          </AnchorLink>
+        </NavLi>
+        <NavLi>
+          <AnchorLink to="/fees">Fees</AnchorLink>
+        </NavLi>
+        <NavLi>
+          <AnchorLink to="/contact">Contact</AnchorLink>
+        </NavLi>
       </NavUl>
     </StyledNav>
   )

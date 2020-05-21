@@ -61,7 +61,7 @@ const ChildrenImg = () => {
 // const StyledSection = styled
 const Home = () => {
   return (
-    <StyledHome>
+    <StyledHome id="home">
       <StyledContainer>
         <StyledTextSection>
           <Title>WELCOME TO KARA LICENCED DAYCARE</Title>
