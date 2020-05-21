@@ -1,4 +1,5 @@
 import React from "react"
+import styled from "styled-components"
 // import { Link } from "gatsby"
 
 import Layout from "../components/layout/layout"
@@ -14,9 +15,34 @@ import Footer from "../components/footer/footer"
 // import Image from "../components/image"
 // import SEO from "../components/seo"
 
+import Title from "../components/UI/Title"
+import Subtitle from "../components/UI/Subtitle"
+import ChildrenImg from "../components/UI/ChildrenImg"
+
+const TextWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+const StyledP = styled.p`
+  color: ${props => props.theme.colors.headingMain};
+  font-size: 3.2rem;
+  margin-bottom: 3rem;
+`
+
 const IndexPage = () => (
   <Layout>
-    <Home />
+    <Home>
+      <TextWrapper>
+        <Title title="Welcome Kids" />
+        <StyledP>2 months - 13 years</StyledP>
+        <Subtitle title="Our Location" />
+        <StyledP>Saskatoon, EAST Side</StyledP>
+        <Subtitle title="Operation Hours" />
+        <StyledP>Mon to Fri - 7:30am to 5:30pm</StyledP>
+      </TextWrapper>
+      <ChildrenImg />
+    </Home>
     <Icons />
     <WhyUs />
     <Program />
