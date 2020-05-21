@@ -2,10 +2,9 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import Img from "gatsby-image"
-// import Wave from "../images/wave.svg"
 
 import { StyledSection, Contained } from "../components/layout/elements"
-
+import CloudIcon from "../images/cloud.svg"
 const StyledContainer = styled(Contained)`
   display: flex;
 `
@@ -13,6 +12,12 @@ const StyledContainer = styled(Contained)`
 const StyledHome = styled(StyledSection)`
   height: 69rem;
   background: ${props => props.theme.colors.blueLight};
+  & > svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    fill: white;
+  }
 `
 const Title = styled.h1`
   color: ${props => props.theme.colors.headingMain};
@@ -43,6 +48,28 @@ const StyledImg = styled(Img)`
 //   display: block;
 // `
 
+const StyledCloud = styled(CloudIcon)`
+  position: absolute;
+  opacity: 0.7;
+`
+
+const CloudOne = styled(StyledCloud)`
+  top: -15rem;
+  left: 45rem;
+`
+const CloudTwo = styled(StyledCloud)`
+  top: -11rem;
+  right: 0rem;
+`
+const CloudThree = styled(StyledCloud)`
+  bottom: -7rem;
+  right: 14rem;
+  width: 14rem;
+`
+const CloudFour = styled(StyledCloud)`
+  bottom: -7rem;
+  left: 1rem;
+`
 const ChildrenImg = () => {
   const { file } = useStaticQuery(graphql`
     query {
@@ -71,7 +98,19 @@ const Home = () => {
           </Subtitle>
         </StyledTextSection>
         <ChildrenImg />
+        <CloudOne />
+        <CloudTwo />
+        <CloudThree />
+        <CloudFour />
       </StyledContainer>
+      <>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
+          <path
+            fill-opacity="1"
+            d="M0,64L80,80C160,96,320,128,480,122.7C640,117,800,75,960,58.7C1120,43,1280,53,1360,58.7L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+          ></path>
+        </svg>
+      </>
     </StyledHome>
   )
 }
