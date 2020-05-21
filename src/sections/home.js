@@ -5,6 +5,7 @@ import Img from "gatsby-image"
 
 import { StyledSection, Contained } from "../components/layout/elements"
 import CloudIcon from "../images/cloud.svg"
+import Title from "../components/UI/Title"
 const StyledContainer = styled(Contained)`
   display: flex;
 `
@@ -19,13 +20,13 @@ const StyledHome = styled(StyledSection)`
     fill: white;
   }
 `
-const Title = styled.h1`
-  color: ${props => props.theme.colors.headingMain};
-  font-family: "Londrina Solid";
-  font-size: 6.4rem;
-  font-weight: 900;
-  margin-bottom: 3rem;
-`
+// const Title = styled.h1`
+//   color: ${props => props.theme.colors.headingMain};
+//   font-family: "Londrina Solid";
+//   font-size: 6.4rem;
+//   font-weight: 900;
+//   margin-bottom: 3rem;
+// `
 const Subtitle = styled.h2`
   color: ${props => props.theme.colors.headingMain};
   font-family: "Londrina Solid";
@@ -86,12 +87,13 @@ const ChildrenImg = () => {
 }
 
 // const StyledSection = styled
-const Home = () => {
+const Home = ({ children }) => {
   return (
     <StyledHome id="home">
       <StyledContainer>
         <StyledTextSection>
-          <Title>WELCOME TO KARA LICENCED DAYCARE</Title>
+          {/* <Title>WELCOME TO KARA LICENCED DAYCARE</Title> */}
+          <Title title="Welcome Kids" />
           <Subtitle>
             We provide SUBSTITY & high quality care and education to young
             children from 2 months trought 13 yearls old.
