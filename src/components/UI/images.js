@@ -14,8 +14,8 @@ const Image = styled(Img)`
   border: solid 2.1rem #fff;
   border-radius: 2rem;
   box-shadow: 29px 22px 22px 0 rgba(0, 0, 0, 0.3);
-  @media ${props => props.theme.mediaQueries.laptop} {
-    width: 28rem;
+  @media ${props => props.theme.mediaQueries.largest} {
+    width: 25rem;
   }
 `
 const ImageOne = styled(Image)`
@@ -25,6 +25,10 @@ const ImageOne = styled(Image)`
 const ImageTwo = styled(Image)`
   right: -25rem;
   top: -6rem;
+  @media ${props => props.theme.mediaQueries.large} {
+    left: 11rem;
+    top: 1rem;
+  }
 `
 
 const Images = () => {

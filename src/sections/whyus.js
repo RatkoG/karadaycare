@@ -24,6 +24,9 @@ const Content = styled.div`
   flex-direction: column;
   align-items: center;
   width: 45%;
+  @media ${props => props.theme.mediaQueries.largest} {
+    width: 50%;
+  }
 `
 
 const H1 = styled.h2`
@@ -33,6 +36,9 @@ const H1 = styled.h2`
   font-weight: 400;
   text-transform: capitalize;
   margin-bottom: 6rem;
+  @media ${props => props.theme.mediaQueries.small} {
+    font-size: 4.5rem;
+  }
 `
 const Paragraph = styled.p`
   text-align: center;

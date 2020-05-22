@@ -7,6 +7,7 @@ const IconBox = styled.div`
   align-items: center;
   justify-content: space-between;
   height: 20rem;
+  width: 30rem;
 `
 
 const H3 = styled.h3`
