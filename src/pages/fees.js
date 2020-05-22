@@ -7,7 +7,6 @@ import Footer from "../components/footer/footer"
 import Title from "../components/UI/Title"
 import Fee from "../components/UI/fee"
 import H2 from "../components/UI/h2"
-import Home from "../sections/home"
 
 const StyledContained = styled(Contained)`
   text-align: center;
@@ -30,11 +29,11 @@ const FeesWrapper = styled.div`
 
 const Fees = () => (
   <Layout>
-    <Home>
+    <SectionTitle>
       <StyledContained>
         <Title title="We are providing subsidy" />
       </StyledContained>
-    </Home>
+    </SectionTitle>
     <StyledSection>
       <Contained>
         <H2 title="Fees" primary />

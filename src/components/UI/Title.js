@@ -6,6 +6,7 @@ const TitleStyle = styled.h1`
   font-family: "Londrina Solid";
   font-size: 6.4rem;
   font-weight: 900;
+  margin-bottom: 3rem;
 `
 
 const Title = ({ title, primary }) => {
