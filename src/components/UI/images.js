@@ -14,6 +14,9 @@ const Image = styled(Img)`
   border: solid 2.1rem #fff;
   border-radius: 2rem;
   box-shadow: 29px 22px 22px 0 rgba(0, 0, 0, 0.3);
+  @media ${props => props.theme.mediaQueries.laptop} {
+    width: 28rem;
+  }
 `
 const ImageOne = styled(Image)`
   left: 0;

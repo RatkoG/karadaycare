@@ -30,9 +30,9 @@ const StyledP = styled.p`
   margin-bottom: 3rem;
 `
 
-const IndexPage = () => (
+const IndexPage = ({ primary }) => (
   <Layout>
-    <Home>
+    <Home primary>
       <TextWrapper>
         <Title title="Welcome Kids" />
         <StyledP>2 months - 13 years</StyledP>
