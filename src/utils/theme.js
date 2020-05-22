@@ -15,10 +15,8 @@ const theme = {
     smallest: `only screen and (max-width: 25em)`, //400px
     smaller: "only screen and (max-width: 31.25em)", //500px
     small: "only screen and (max-width: 37.5em)", //600px
-    medium: "only screen and (max-width: 56.25em)", //900px
+    medium: "only screen and (max-width: 48em)", //900px
     large: "only screen and (max-width: 80em)", //1280px
-    larger: "only screen and (max-width: 90em)", //1440
-    largest: "only screen and (max-width: 97em)", //1552
   },
 }
 export default theme

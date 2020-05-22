@@ -4,14 +4,19 @@ import styled from "styled-components"
 import Img from "gatsby-image"
 
 const StyledImg = styled(Img)`
-  width: 50%;
+  width: 50rem;
+  height: 100%;
+  align-self: center;
+  @media ${props => props.theme.mediaQueries.medium} {
+    display: none;
+  }
 `
 const ChildrenImg = () => {
   const { file } = useStaticQuery(graphql`
     query {
       file(relativePath: { eq: "children.png" }) {
         childImageSharp {
-          fluid(quality: 80, maxHeight: 400) {
+          fluid(quality: 80, maxHeight: 300) {
             ...GatsbyImageSharpFluid_tracedSVG
           }
         }

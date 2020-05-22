@@ -6,13 +6,13 @@ html {
       box-sizing: border-box;
       line-height: 1.15;
       @media ${props => props.theme.mediaQueries.largest} {
-          font-size: 60%;
+          font-size: 56.25%;
       }
       @media ${props => props.theme.mediaQueries.large} {
-        font-size: 57.5%;
+        font-size: 50%;
       }
       @media ${props => props.theme.mediaQueries.small} {
-          font-size: 55%;
+          font-size: 43%;
       }
     }
 		* {
