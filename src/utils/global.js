@@ -29,7 +29,8 @@ html {
 		font-family: 'Lato', 'sans-serif', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", '!default';
 		width: 100%;
     height: 100%;
-		overflow: visible;
+		${"" /* overflow: visible; */}
+    overflow-x:hidden;
 		${
       "" /* --primary: ${props => props.theme.colors.main};
 		--shadow-color: rgba(0, 0, 0, 0.1);

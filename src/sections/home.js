@@ -8,6 +8,7 @@ import CloudIcon from "../images/cloud.svg"
 import Title from "../components/UI/Title"
 const StyledContainer = styled(Contained)`
   display: flex;
+  justify-content: space-evenly;
 `
 
 const StyledHome = styled(StyledSection)`
@@ -20,13 +21,7 @@ const StyledHome = styled(StyledSection)`
     fill: white;
   }
 `
-// const Title = styled.h1`
-//   color: ${props => props.theme.colors.headingMain};
-//   font-family: "Londrina Solid";
-//   font-size: 6.4rem;
-//   font-weight: 900;
-//   margin-bottom: 3rem;
-// `
+
 const Subtitle = styled.h2`
   color: ${props => props.theme.colors.headingMain};
   font-family: "Londrina Solid";
@@ -45,9 +40,6 @@ const StyledImg = styled(Img)`
   width: 80%;
   height: 100%;
 `
-// const StyledWave = styled(Wave)`
-//   display: block;
-// `
 
 const StyledCloud = styled(CloudIcon)`
   position: absolute;
@@ -55,21 +47,21 @@ const StyledCloud = styled(CloudIcon)`
 `
 
 const CloudOne = styled(StyledCloud)`
-  top: -15rem;
-  left: 45rem;
+  top: 0;
+  left: 0;
 `
 const CloudTwo = styled(StyledCloud)`
-  top: -11rem;
-  right: 0rem;
+  top: 22px;
+  right: -46rem;
 `
 const CloudThree = styled(StyledCloud)`
-  bottom: -7rem;
-  right: 14rem;
-  width: 14rem;
+  bottom: 9rem;
+  left: -40rem;
 `
 const CloudFour = styled(StyledCloud)`
-  bottom: -7rem;
-  left: 1rem;
+  height: 8.5rem;
+  bottom: 12rem;
+  right: -43rem;
 `
 const ChildrenImg = () => {
   const { file } = useStaticQuery(graphql`
@@ -86,25 +78,14 @@ const ChildrenImg = () => {
   return <StyledImg fluid={file.childImageSharp.fluid} />
 }
 
-// const StyledSection = styled
 const Home = ({ children, primary }) => {
   return (
     <StyledHome id="home" primary={primary}>
-      <StyledContainer>
-        <StyledTextSection>
-          {/* <Title>WELCOME TO KARA LICENCED DAYCARE</Title> */}
-          <Title title="Welcome Kids" />
-          <Subtitle>
-            We provide SUBSTITY & high quality care and education to young
-            children from 2 months trought 13 yearls old.
-          </Subtitle>
-        </StyledTextSection>
-        <ChildrenImg />
-        <CloudOne />
-        <CloudTwo />
-        <CloudThree />
-        <CloudFour />
-      </StyledContainer>
+      <StyledContainer>{children}</StyledContainer>
+      <CloudOne />
+      <CloudTwo />
+      <CloudThree />
+      <CloudFour />
       <>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
           <path
