@@ -5,10 +5,10 @@ html {
       font-size: 62.5%; //1rem = 10px
       box-sizing: border-box;
       line-height: 1.15;
-      @media ${props => props.theme.mediaQueries.largest} {
+      @media ${props => props.theme.mediaQueries.largestst} {
           font-size: 56.25%;
       }
-      @media ${props => props.theme.mediaQueries.large} {
+      @media ${props => props.theme.mediaQueries.largest} {
         font-size: 50%;
       }
       @media ${props => props.theme.mediaQueries.small} {
@@ -26,7 +26,7 @@ html {
       box-sizing: inherit;
     }
 	body {
-		font-family: 'Lato', 'sans-serif', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", '!default';
+		font-family: 'Lato', 'sans-serif';
 		width: 100%;
     height: 100%;
 		${"" /* overflow: visible; */}

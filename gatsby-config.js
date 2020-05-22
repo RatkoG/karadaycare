@@ -30,7 +30,7 @@ module.exports = {
             variants: [`300`, `400`, `900`],
           },
           {
-            family: `Open Sans`,
+            family: `Lato`,
             variants: [`400`, `400i`, `700`],
           },
         ],
