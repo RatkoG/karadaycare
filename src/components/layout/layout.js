@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 `
 
 const StyledMain = styled.main`
-  margin-top: 12rem;
+  margin-top: ${({ Mobile }) => (Mobile ? "6rem" : "12rem")};
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -26,8 +26,8 @@ const StyledMain = styled.main`
 const Layout = ({ noShowOnPage, children }) => (
   <ThemeProvider theme={theme}>
     <Wrapper>
-      <Navbar noShowOnPage={noShowOnPage} />
-      <StyledMain>{children}</StyledMain>
+      <Navbar noShowOnPage={noShowOnPage} Mobile={true} />
+      <StyledMain Mobile={true}>{children}</StyledMain>
       <GlobalStyles />
     </Wrapper>
   </ThemeProvider>

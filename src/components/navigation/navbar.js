@@ -25,7 +25,7 @@ const Wrapper = styled.div`
   align-items: center;
   overflow-x: hidden;
   justify-content: space-between;
-  height: 7rem;
+  height: ${({ Mobile }) => (Mobile ? "6rem" : "7rem")};
   overflow: inherit;
 `
 const StyledCloud = styled(CloudIcon)`
@@ -39,6 +39,9 @@ const InfoSection = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media ${props => props.theme.mediaQueries.medium} {
+    font-size: 1.5rem;
+  }
   & svg {
     fill: currentColor;
     width: 1em;
@@ -62,10 +65,13 @@ const Navbar = ({ noShowOnPage }) => {
   return (
     <StyledHeader>
       <Contained>
-        <InfoSection>
-          <InfoNavbar />
-        </InfoSection>
-        <Wrapper>
+        {Mobile ? null : (
+          <InfoSection>
+            <InfoNavbar />
+          </InfoSection>
+        )}
+
+        <Wrapper Mobile={Mobile}>
           <StyledCloud />
           <AnchorLink to="/#home">
             <Logo />
