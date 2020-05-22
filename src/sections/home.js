@@ -8,7 +8,6 @@ import CloudIcon from "../images/cloud.svg"
 import Title from "../components/UI/Title"
 const StyledContainer = styled(Contained)`
   display: flex;
-  justify-content: space-evenly;
 `
 
 const StyledHome = styled(StyledSection)`
@@ -56,21 +55,21 @@ const StyledCloud = styled(CloudIcon)`
 `
 
 const CloudOne = styled(StyledCloud)`
-  top: 0;
-  left: 0;
+  top: -15rem;
+  left: 45rem;
 `
 const CloudTwo = styled(StyledCloud)`
-  top: 22px;
-  right: -46rem;
+  top: -11rem;
+  right: 0rem;
 `
 const CloudThree = styled(StyledCloud)`
-  bottom: 9rem;
-  left: -40rem;
+  bottom: -7rem;
+  right: 14rem;
+  width: 14rem;
 `
 const CloudFour = styled(StyledCloud)`
-  height: 8.5rem;
-  bottom: 12rem;
-  right: -43rem;
+  bottom: -7rem;
+  left: 1rem;
 `
 const ChildrenImg = () => {
   const { file } = useStaticQuery(graphql`
@@ -92,20 +91,20 @@ const Home = ({ children, primary }) => {
   return (
     <StyledHome id="home" primary={primary}>
       <StyledContainer>
-        {/* <Title>WELCOME TO KARA LICENCED DAYCARE</Title> */}
-        {/* <Title title="Welcome Kids" />
+        <StyledTextSection>
+          {/* <Title>WELCOME TO KARA LICENCED DAYCARE</Title> */}
+          <Title title="Welcome Kids" />
           <Subtitle>
             We provide SUBSTITY & high quality care and education to young
             children from 2 months trought 13 yearls old.
-          </Subtitle> */}
-        {children}
-
-        {/* <ChildrenImg /> */}
+          </Subtitle>
+        </StyledTextSection>
+        <ChildrenImg />
+        <CloudOne />
+        <CloudTwo />
+        <CloudThree />
+        <CloudFour />
       </StyledContainer>
-      <CloudOne />
-      <CloudTwo />
-      <CloudThree />
-      <CloudFour />
       <>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
           <path
