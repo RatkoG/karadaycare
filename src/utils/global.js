@@ -26,7 +26,7 @@ html {
       box-sizing: inherit;
     }
 	body {
-		font-family: 'Lato', 'sans-serif', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", '!default';
+		font-family: 'Lato', 'sans-serif';
 		width: 100%;
     height: 100%;
 		${"" /* overflow: visible; */}
