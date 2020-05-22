@@ -12,7 +12,7 @@ const StyledContainer = styled(Contained)`
 `
 
 const StyledHome = styled(StyledSection)`
-  height: 69rem;
+  height: ${props => (props.primary ? "69rem" : " 50rem")};
   background: ${props => props.theme.colors.blueLight};
   & > svg {
     position: absolute;
@@ -88,9 +88,9 @@ const ChildrenImg = () => {
 }
 
 // const StyledSection = styled
-const Home = ({ children }) => {
+const Home = ({ children, primary }) => {
   return (
-    <StyledHome id="home">
+    <StyledHome id="home" primary={primary}>
       <StyledContainer>
         {/* <Title>WELCOME TO KARA LICENCED DAYCARE</Title> */}
         {/* <Title title="Welcome Kids" />

@@ -60,7 +60,7 @@ const Fees = () => (
           <Fee title="Kindergarten" price="&#36; 500" per="per month" />
           <Fee
             title="School Age"
-            subtitle="All Ages"
+            subtitle="All Year"
             price="&#36; 500 "
             per="per month"
           />
