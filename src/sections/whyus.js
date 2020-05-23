@@ -12,11 +12,15 @@ background-image:  linear-gradient(to right, ${props =>
   /* background-image: url(${Pattern});
   background-color: ${props => props.theme.colors.whiteIsh}; */
   /* opacity: 8; */
+
 `
 const StyledContained = styled(Contained)`
   display: flex;
   justify-content: space-between;
   margin: 5rem auto;
+  @media ${props => props.theme.mediaQueries.smaller} {
+    justify-content: center;
+  }
 `
 
 const Content = styled.div`
@@ -26,6 +30,9 @@ const Content = styled.div`
   width: 45%;
   @media ${props => props.theme.mediaQueries.largest} {
     width: 50%;
+  }
+  @media ${props => props.theme.mediaQueries.smaller} {
+    width: 80%;
   }
 `
 
@@ -38,6 +45,7 @@ const H1 = styled.h2`
   margin-bottom: 6rem;
   @media ${props => props.theme.mediaQueries.small} {
     font-size: 4.5rem;
+    margin-bottom: 3rem;
   }
 `
 const Paragraph = styled.p`

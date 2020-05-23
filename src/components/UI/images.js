@@ -4,7 +4,10 @@ import styled from "styled-components"
 import Img from "gatsby-image"
 
 const ImageHolder = styled.div`
-  /* position: absolute; */
+  width: 50%;
+  @media ${props => props.theme.mediaQueries.smaller} {
+    width: 0%;
+  }
 `
 
 const Image = styled(Img)`
@@ -16,6 +19,10 @@ const Image = styled(Img)`
   box-shadow: 29px 22px 22px 0 rgba(0, 0, 0, 0.3);
   @media ${props => props.theme.mediaQueries.largest} {
     width: 25rem;
+  }
+  @media ${props => props.theme.mediaQueries.smaller} {
+    display: none;
+    width: 0%;
   }
 `
 const ImageOne = styled(Image)`
