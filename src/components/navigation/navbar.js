@@ -39,8 +39,11 @@ const InfoSection = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media ${props => props.theme.mediaQueries.large} {
+    font-size: 1.6rem;
+  }
   @media ${props => props.theme.mediaQueries.medium} {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   & svg {
     fill: currentColor;
