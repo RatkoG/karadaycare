@@ -9,6 +9,7 @@ import Title from "../components/UI/Title"
 const StyledContainer = styled(Contained)`
   display: flex;
   justify-content: space-evenly;
+  z-index: 3;
 `
 
 const StyledHome = styled(StyledSection)`
@@ -48,20 +49,46 @@ const StyledCloud = styled(CloudIcon)`
 
 const CloudOne = styled(StyledCloud)`
   top: 0;
-  left: 0;
+  left: 40rem;
+  @media ${props => props.theme.mediaQueries.medium} {
+    left: 10rem;
+  }
+  @media ${props => props.theme.mediaQueries.medium} {
+    left: -3rem;
+  }
 `
 const CloudTwo = styled(StyledCloud)`
-  top: 22px;
-  right: -46rem;
+  top: 6rem;
+  right: 3rem;
+  @media ${props => props.theme.mediaQueries.medium} {
+    right: -16rem;
+  }
 `
 const CloudThree = styled(StyledCloud)`
   bottom: 9rem;
-  left: -40rem;
+  right: 16rem;
+  @media ${props => props.theme.mediaQueries.medium} {
+    right: -10rem;
+  }
 `
 const CloudFour = styled(StyledCloud)`
-  height: 8.5rem;
-  bottom: 12rem;
-  right: -43rem;
+  bottom: 2rem;
+  left: 13rem;
+  @media ${props => props.theme.mediaQueries.medium} {
+    left: -6rem;
+  }
+`
+const CloudBox = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+`
+
+const WaveBox = styled.div`
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  fill: white;
 `
 const ChildrenImg = () => {
   const { file } = useStaticQuery(graphql`
@@ -82,18 +109,26 @@ const Home = ({ children, primary }) => {
   return (
     <StyledHome id="home" primary={primary}>
       <StyledContainer>{children}</StyledContainer>
-      <CloudOne />
-      <CloudTwo />
-      <CloudThree />
-      <CloudFour />
-      <>
+      <CloudBox>
+        <CloudOne />
+      </CloudBox>
+      <CloudBox>
+        <CloudTwo />
+      </CloudBox>
+      <CloudBox>
+        <CloudThree />
+      </CloudBox>
+      <CloudBox>
+        <CloudFour />
+      </CloudBox>
+      <WaveBox>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
           <path
             fill-opacity="1"
             d="M0,64L80,80C160,96,320,128,480,122.7C640,117,800,75,960,58.7C1120,43,1280,53,1360,58.7L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
           ></path>
         </svg>
-      </>
+      </WaveBox>
     </StyledHome>
   )
 }

@@ -17,17 +17,19 @@ const Wrapper = styled.div`
 `
 
 const StyledMain = styled.main`
-  margin-top: ${({ Mobile }) => (Mobile ? "6rem" : "12rem")};
+/* TESTING IS NOT WORKING NOW */
+  /* margin-top: ${({ Mobile }) => (Mobile ? "6rem" : "12rem")}; */
+  margin-top: 12rem;
   display: flex;
   flex-direction: column;
   flex: 1;
 `
 
-const Layout = ({ noShowOnPage, children }) => (
+const Layout = ({ noShowOnPage, children, Mobile }) => (
   <ThemeProvider theme={theme}>
     <Wrapper>
-      <Navbar noShowOnPage={noShowOnPage} Mobile={true} />
-      <StyledMain Mobile={true}>{children}</StyledMain>
+      <Navbar noShowOnPage={noShowOnPage} Mobile={Mobile} />
+      <StyledMain Mobile>{children}</StyledMain>
       <GlobalStyles />
     </Wrapper>
   </ThemeProvider>
