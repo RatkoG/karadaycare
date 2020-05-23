@@ -18,6 +18,10 @@ const StyledContained = styled(Contained)`
   display: flex;
   justify-content: space-between;
   margin: 5rem auto;
+  @media ${props => props.theme.mediaQueries.tablet} {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
   @media ${props => props.theme.mediaQueries.smaller} {
     justify-content: center;
   }
@@ -31,9 +35,12 @@ const Content = styled.div`
   @media ${props => props.theme.mediaQueries.largest} {
     width: 50%;
   }
-  @media ${props => props.theme.mediaQueries.smaller} {
+  @media ${props => props.theme.mediaQueries.tablet} {
     width: 80%;
   }
+  /* @media ${props => props.theme.mediaQueries.smaller} {
+    width: 80%;
+  } */
 `
 
 const H1 = styled.h2`
