@@ -5,9 +5,9 @@ const StyledP = styled.p`
   font-size: 2.4rem;
   color: white;
   font-style: italic;
-  @media ${props => props.theme.mediaQueries.largest} {
-    /* width: 40%; */
-  }
+  /* @media ${props => props.theme.mediaQueries.largest} {
+    width: 40%;
+  } */
 `
 
 const Certificate = ({ text }) => {

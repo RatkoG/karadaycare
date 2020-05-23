@@ -9,13 +9,13 @@ const ImageHolder = styled.div`
   justify-content: space-between;
   height: 52rem;
   width: 50%;
-  @media ${props => props.theme.mediaQueries.tablet} {
+  /* @media ${props => props.theme.mediaQueries.tablet} {
     height: 42rem;
     width: 60%;
   }
   @media ${props => props.theme.mediaQueries.smaller} {
     display: none;
-  }
+  } */
 `
 
 const Image = styled(Img)`
@@ -25,9 +25,9 @@ const Image = styled(Img)`
   border-radius: 2rem;
   box-shadow: 29px 22px 22px 0 rgba(0, 0, 0, 0.3);
 
-  @media ${props => props.theme.mediaQueries.tablet} {
+  /* @media ${props => props.theme.mediaQueries.tablet} {
     width: 25rem;
-  }
+  } */
 `
 const ImageOne = styled(Image)`
   /* left: 0;

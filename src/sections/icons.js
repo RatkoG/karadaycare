@@ -19,25 +19,25 @@ const H3 = styled.h3`
   font-size: 3.2rem;
   font-family: "Londrina Solid";
   font-weight: 400;
-  @media ${props => props.theme.mediaQueries.medium} {
+  /* @media ${props => props.theme.mediaQueries.medium} {
     font-size: 2.7rem;
   }
   @media ${props => props.theme.mediaQueries.small} {
     font-size: 2.4rem;
-  }
+  } */
 `
 const Icon = styled.div`
   width: 13rem;
   height: 13rem;
   margin-bottom: 2rem;
-  @media ${props => props.theme.mediaQueries.large} {
+  /* @media ${props => props.theme.mediaQueries.large} {
     width: 10rem;
     height: 10rem;
   }
   @media ${props => props.theme.mediaQueries.small} {
     width: 8rem;
     height: 8rem;
-  }
+  } */
   & svg {
     width: 100%;
     height: auto;
@@ -48,9 +48,9 @@ const Box = styled.div`
   flex-direction: column;
   align-items: center;
 
-  @media ${props => props.theme.mediaQueries.smaller} {
+  /* @media ${props => props.theme.mediaQueries.smaller} {
     width: 40%;
-  }
+  } */
 `
 
 const Icons = () => {

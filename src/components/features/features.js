@@ -13,50 +13,49 @@ const FeaturesLayout = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 10rem;
-  @media ${props => props.theme.mediaQueries.small} {
+  /* @media ${props => props.theme.mediaQueries.small} {
     flex-direction: column;
     justify-content: center;
   }
   @media ${props => props.theme.mediaQueries.small} {
     margin-top: 0rem;
     height: 60rem;
-  }
+  } */
 `
 const FirstCol = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 40%;
-  @media ${props => props.theme.mediaQueries.medium} {
+  /* @media ${props => props.theme.mediaQueries.medium} {
     width: 70%;
-    /* margin: auto; */
     margin-bottom: 4rem;
-  }
-  @media ${props => props.theme.mediaQueries.small} {
+  } */
+  /* @media ${props => props.theme.mediaQueries.small} {
     margin: 0 auto;
-  }
+  } */
 `
 const SecondCol = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 40%;
-  @media ${props => props.theme.mediaQueries.medium} {
+  /* @media ${props => props.theme.mediaQueries.medium} {
     width: 70%;
-    /* margin: auto; */
+
   }
   @media ${props => props.theme.mediaQueries.small} {
     margin: 0 auto;
-  }
+  } */
 `
 
 const ProgramLeft = styled.div`
   /* height: 40%; */
   display: flex;
   justify-content: space-between;
-  @media ${props => props.theme.mediaQueries.medium} {
+  /* @media ${props => props.theme.mediaQueries.medium} {
     flex-direction: row-reverse;
-  }
+  } */
 `
 const ProgramRight = styled.div`
   height: 40%;
@@ -67,9 +66,9 @@ const ProgramRight = styled.div`
 const Text = styled.div`
   width: 70%;
   text-align: ${props => (props.primary ? "right" : "left")};
-  @media ${props => props.theme.mediaQueries.medium} {
+  /* @media ${props => props.theme.mediaQueries.medium} {
     text-align: left;
-  }
+  } */
 `
 
 const Title = styled.h4`

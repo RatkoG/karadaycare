@@ -18,13 +18,13 @@ const StyledContained = styled(Contained)`
   display: flex;
   justify-content: space-between;
   margin: 5rem auto;
-  @media ${props => props.theme.mediaQueries.tablet} {
+  /* @media ${props => props.theme.mediaQueries.tablet} {
     flex-direction: column-reverse;
     align-items: center;
   }
   @media ${props => props.theme.mediaQueries.smaller} {
     justify-content: center;
-  }
+  } */
 `
 
 const Content = styled.div`
@@ -32,12 +32,12 @@ const Content = styled.div`
   flex-direction: column;
   align-items: center;
   width: 45%;
-  @media ${props => props.theme.mediaQueries.largest} {
+  /* @media ${props => props.theme.mediaQueries.largest} {
     width: 50%;
   }
   @media ${props => props.theme.mediaQueries.tablet} {
     width: 80%;
-  }
+  } */
   /* @media ${props => props.theme.mediaQueries.smaller} {
     width: 80%;
   } */
@@ -50,10 +50,10 @@ const H1 = styled.h2`
   font-weight: 400;
   text-transform: capitalize;
   margin-bottom: 6rem;
-  @media ${props => props.theme.mediaQueries.small} {
+  /* @media ${props => props.theme.mediaQueries.small} {
     font-size: 4.5rem;
     margin-bottom: 3rem;
-  }
+  } */
   /* @media ${props => props.theme.mediaQueries.smaller} {
     font-size: 3rem;
   } */

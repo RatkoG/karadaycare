@@ -50,33 +50,33 @@ const StyledCloud = styled(CloudIcon)`
 const CloudOne = styled(StyledCloud)`
   top: 0;
   left: 40rem;
-  @media ${props => props.theme.mediaQueries.medium} {
+  /* @media ${props => props.theme.mediaQueries.medium} {
     left: 10rem;
   }
   @media ${props => props.theme.mediaQueries.medium} {
     left: -3rem;
-  }
+  } */
 `
 const CloudTwo = styled(StyledCloud)`
   top: 6rem;
   right: 3rem;
-  @media ${props => props.theme.mediaQueries.medium} {
+  /* @media ${props => props.theme.mediaQueries.medium} {
     right: -16rem;
-  }
+  } */
 `
 const CloudThree = styled(StyledCloud)`
   bottom: 9rem;
   right: 16rem;
-  @media ${props => props.theme.mediaQueries.medium} {
+  /* @media ${props => props.theme.mediaQueries.medium} {
     right: -10rem;
-  }
+  } */
 `
 const CloudFour = styled(StyledCloud)`
   bottom: 2rem;
   left: 13rem;
-  @media ${props => props.theme.mediaQueries.medium} {
+  /* @media ${props => props.theme.mediaQueries.medium} {
     left: -6rem;
-  }
+  } */
 `
 const CloudBox = styled.div`
   position: absolute;
