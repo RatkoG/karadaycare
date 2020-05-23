@@ -44,6 +44,10 @@ const NavLi = styled.li`
   & > a {
     text-decoration: none;
   }
+  @media ${props => props.theme.mediaQueries.medium} {
+    padding: 1rem 1.1rem;
+    font-size: 1.8rem;
+  }
 `
 
 const NavItems = ({ mobile, clicked }) => {

@@ -18,6 +18,9 @@ const StyledLink = styled(Link)`
   &:hover {
     color: ${props => props.theme.colors.headingMain};
   }
+  @media ${props => props.theme.mediaQueries.small} {
+    font-size: 1.3rem;
+  }
 `
 
 const NavItem = ({ link, clicked, mobile }) => {
