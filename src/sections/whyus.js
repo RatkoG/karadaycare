@@ -18,6 +18,10 @@ const StyledContained = styled(Contained)`
   display: flex;
   justify-content: space-between;
   margin: 5rem auto;
+  @media ${props => props.theme.mediaQueries.tablet} {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
   @media ${props => props.theme.mediaQueries.smaller} {
     justify-content: center;
   }
@@ -31,9 +35,12 @@ const Content = styled.div`
   @media ${props => props.theme.mediaQueries.largest} {
     width: 50%;
   }
-  @media ${props => props.theme.mediaQueries.smaller} {
+  @media ${props => props.theme.mediaQueries.tablet} {
     width: 80%;
   }
+  /* @media ${props => props.theme.mediaQueries.smaller} {
+    width: 80%;
+  } */
 `
 
 const H1 = styled.h2`
@@ -56,7 +63,7 @@ const Paragraph = styled.p`
   background-color: ${props => props.theme.colors.whiteIsh};
   color: ${props => props.theme.colors.text};
   font-size: 1.6rem;
-  line-height: 1.6;
+  line-height: 2;
   padding: 1rem;
   /* @media ${props => props.theme.mediaQueries.smaller} {
     font-size: 1.3rem;

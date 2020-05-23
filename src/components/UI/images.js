@@ -4,41 +4,37 @@ import styled from "styled-components"
 import Img from "gatsby-image"
 
 const ImageHolder = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 52rem;
   width: 50%;
+  @media ${props => props.theme.mediaQueries.tablet} {
+    height: 42rem;
+    width: 60%;
+  }
   @media ${props => props.theme.mediaQueries.smaller} {
-    width: 0%;
+    display: none;
   }
 `
 
 const Image = styled(Img)`
-  position: absolute;
-  width: 35rem;
+  width: 33rem;
   box-sizing: content-box;
   border: solid 2.1rem #fff;
   border-radius: 2rem;
   box-shadow: 29px 22px 22px 0 rgba(0, 0, 0, 0.3);
-  @media ${props => props.theme.mediaQueries.LARGEST} {
+
+  @media ${props => props.theme.mediaQueries.tablet} {
     width: 25rem;
-  }
-  @media ${props => props.theme.mediaQueries.largest} {
-    width: 25rem;
-  }
-  @media ${props => props.theme.mediaQueries.smaller} {
-    display: none;
-    width: 0%;
   }
 `
 const ImageOne = styled(Image)`
-  left: 0;
-  top: 0;
+  /* left: 0;
+  top: 0; */
 `
 const ImageTwo = styled(Image)`
-  right: -25rem;
-  top: -6rem;
-  @media ${props => props.theme.mediaQueries.large} {
-    left: 11rem;
-    top: 1rem;
-  }
+  margin-left: auto;
 `
 
 const Images = () => {
