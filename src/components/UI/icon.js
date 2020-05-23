@@ -7,7 +7,6 @@ const IconBox = styled.div`
   align-items: center;
   justify-content: space-between;
   height: 20rem;
-  width: 30rem;
 `
 
 const H3 = styled.h3`
@@ -19,6 +18,9 @@ const H3 = styled.h3`
 const IconSvg = styled.div`
   width: 13rem;
   height: 13rem;
+  & > svg {
+    width: 100%;
+  }
 `
 const Icon = props => {
   return (
