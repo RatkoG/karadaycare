@@ -63,7 +63,7 @@ const Paragraph = styled.p`
   background-color: ${props => props.theme.colors.whiteIsh};
   color: ${props => props.theme.colors.text};
   font-size: 1.6rem;
-  line-height: 2;
+  line-height: 1.6;
   padding: 1rem;
   /* @media ${props => props.theme.mediaQueries.smaller} {
     font-size: 1.3rem;

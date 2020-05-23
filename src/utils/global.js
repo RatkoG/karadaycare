@@ -6,13 +6,8 @@ html {
       box-sizing: border-box;
       line-height: 1.15;
 
-      ${
-        "" /* @media ${props => props.theme.mediaQueries.largest} {
+      @media ${props => props.theme.mediaQueries.largest} {
         font-size: 50%;
-      }
-      @media ${props => props.theme.mediaQueries.smaller} {
-        font-size: 50%;
-      } */
       }
 
     }
