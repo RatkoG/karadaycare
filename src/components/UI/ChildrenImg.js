@@ -8,12 +8,15 @@ const StyledImg = styled(Img)`
   height: 100%;
   align-self: center;
 
-  /* @media ${props => props.theme.mediaQueries.medium} {
-    width: 32rem;
+  @media ${props => props.theme.mediaQueries.large} {
+    width: 40rem;
+  }
+  @media ${props => props.theme.mediaQueries.medium} {
+    width: 29rem;
   }
   @media ${props => props.theme.mediaQueries.small} {
     display: none;
-  } */
+  }
 `
 const ChildrenImg = () => {
   const { file } = useStaticQuery(graphql`

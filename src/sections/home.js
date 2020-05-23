@@ -50,10 +50,10 @@ const StyledCloud = styled(CloudIcon)`
 const CloudOne = styled(StyledCloud)`
   top: 0;
   left: 40rem;
-  /* @media ${props => props.theme.mediaQueries.medium} {
+  @media ${props => props.theme.mediaQueries.large} {
     left: 10rem;
   }
-  @media ${props => props.theme.mediaQueries.medium} {
+  /* @media ${props => props.theme.mediaQueries.medium} {
     left: -3rem;
   } */
 `
