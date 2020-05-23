@@ -5,9 +5,11 @@ const StyledWrapper = styled.div`
   width: 80%;
   margin: auto;
 `
+
 const StyledRowOne = styled.div`
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 4rem;
 `
 const StyledRowTwo = styled.div`

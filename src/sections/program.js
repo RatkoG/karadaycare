@@ -17,6 +17,11 @@ const StyledSun = styled(Sun)`
   left: 0;
   width: 18rem;
   height: 18rem;
+  @media ${props => props.theme.mediaQueries.largest} {
+    left: 20px;
+    width: 15rem;
+    height: 15rem;
+  }
 `
 
 const StyledContained = styled(Contained)`
@@ -29,6 +34,11 @@ const StyledRocket = styled(Rocket)`
   right: 0;
   width: 18rem;
   height: 18rem;
+  @media ${props => props.theme.mediaQueries.largest} {
+    right: 20px;
+    width: 15rem;
+    height: 15rem;
+  }
 `
 const HeadingText = styled.h3`
   width: 47%;
