@@ -11,13 +11,17 @@ const theme = {
     green: "#6DD800",
   },
   mediaQueries: {
-    smallest: `only screen and (max-width: 25em)`, //400px
-    smaller: "only screen and (max-width: 31.25em)", //500px
-    small: "only screen and (max-width: 37.5em)", //600px
-    medium: "only screen and (max-width: 48em)", //900px
-    large: "only screen and (max-width: 56.25em)", //900px
+    SMALL: `only screen and (max-width: 25em)`,
+    MEDIUM: `only screen and (max-width: 37.5em)`,
+    LARGE: `only screen and (max-width: 56.25em)`,
+    LARGEST: `only screen and (max-width:75em)`,
+    smallest: `only screen and (max-width: 26.60em)`,
+    smaller: "only screen and (max-width: 31.25em)",
+    small: "only screen and (max-width: 37.5em)",
+    medium: "only screen and (max-width: 48em)",
+    large: "only screen and (max-width: 56.25em)",
 
-    largest: "only screen and (max-width: 64em)", //1280px
+    largest: "only screen and (max-width: 64em)",
   },
 }
 export default theme

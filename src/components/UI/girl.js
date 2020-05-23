@@ -11,6 +11,9 @@ const StyledImage = styled(Img)`
   transform: translate(-50%, -50%);
   user-select: none;
   overflow: hidden;
+  @media ${props => props.theme.mediaQueries.medium} {
+    display: none;
+  }
 `
 
 const Girl = () => {
