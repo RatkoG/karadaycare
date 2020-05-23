@@ -86,7 +86,7 @@ const CloudBox = styled.div`
 
 const WaveBox = styled.div`
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
   width: 100%;
   fill: white;
 `
