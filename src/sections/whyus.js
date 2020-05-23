@@ -47,6 +47,9 @@ const H1 = styled.h2`
     font-size: 4.5rem;
     margin-bottom: 3rem;
   }
+  /* @media ${props => props.theme.mediaQueries.smaller} {
+    font-size: 3rem;
+  } */
 `
 const Paragraph = styled.p`
   text-align: center;
@@ -55,6 +58,9 @@ const Paragraph = styled.p`
   font-size: 1.6rem;
   line-height: 1.6;
   padding: 1rem;
+  /* @media ${props => props.theme.mediaQueries.smaller} {
+    font-size: 1.3rem;
+  } */
 `
 
 const WhyUs = () => {

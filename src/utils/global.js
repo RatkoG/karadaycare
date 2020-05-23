@@ -9,6 +9,9 @@ html {
       @media ${props => props.theme.mediaQueries.largest} {
         font-size: 50%;
       }
+      @media ${props => props.theme.mediaQueries.smaller} {
+        font-size: 37%;
+      }
     }
 		* {
       outline: none;
@@ -25,7 +28,8 @@ html {
 		width: 100%;
     height: 100%;
     overflow: visible;
-    ${"" /* overflow-x:hidden; */}
+    overflow-x:hidden
+
 		${
       "" /* --primary: ${props => props.theme.colors.main};
 		--shadow-color: rgba(0, 0, 0, 0.1);
