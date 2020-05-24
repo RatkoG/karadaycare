@@ -32,15 +32,12 @@ const Content = styled.div`
   flex-direction: column;
   align-items: center;
   width: 45%;
-  /* @media ${props => props.theme.mediaQueries.largest} {
-    width: 50%;
+  @media ${props => props.theme.mediaQueries.largest} {
+    width: 60%;
   }
-  @media ${props => props.theme.mediaQueries.tablet} {
-    width: 80%;
-  } */
-  /* @media ${props => props.theme.mediaQueries.smaller} {
-    width: 80%;
-  } */
+  @media ${props => props.theme.mediaQueries.small} {
+    width: 100%;
+  }
 `
 
 const H1 = styled.h2`
