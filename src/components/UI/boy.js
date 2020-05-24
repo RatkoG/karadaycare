@@ -9,12 +9,17 @@ const StyledImage = styled(Img)`
   bottom: -5rem;
   right: 6rem;
   overflow: hidden;
-  /* @media ${props => props.theme.mediaQueries.large} {
+  @media ${props => props.theme.mediaQueries.large} {
     width: 20rem;
   }
-  @media ${props => props.theme.mediaQueries.small} {
+
+  @media ${props => props.theme.mediaQueries.medium} {
+    right: 3rem;
+  }
+
+  @media ${props => props.theme.mediaQueries.tablet} {
     display: none;
-  } */
+  }
 `
 
 const Boy = () => {
