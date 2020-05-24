@@ -23,6 +23,13 @@ const StyledStamp = styled(Stamp)`
   right: 0;
   width: 15rem;
   height: 15rem;
+  @media ${props => props.theme.mediaQueries.tablet} {
+    width: 13rem;
+    height: 13rem;
+  }
+  @media ${props => props.theme.mediaQueries.small} {
+    display: none;
+  }
 `
 
 const Certified = () => {
