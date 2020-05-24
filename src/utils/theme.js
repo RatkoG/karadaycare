@@ -14,6 +14,7 @@ const theme = {
     smallest: `only screen and (max-width: 25em)`, //400px
     smaller: "only screen and (max-width: 31.25em)", //500px
     small: "only screen and (max-width: 37.5em)", //600px
+    tablet: "only screen and (max-width: 48em)", //768px
     medium: "only screen and (max-width: 56.25em)", //900px
     large: "only screen and (max-width: 64em)", //1024px
   },

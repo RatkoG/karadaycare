@@ -13,6 +13,11 @@ const ImageHolder = styled.div`
     justify-content: space-evenly;
     width: 35%;
   }
+  @media ${props => props.theme.mediaQueries.tablet} {
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+  }
   @media ${props => props.theme.mediaQueries.small} {
     display: none;
   }
