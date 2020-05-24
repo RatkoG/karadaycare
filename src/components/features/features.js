@@ -9,24 +9,31 @@ import MealSvg from "../../images/meal.svg"
 const FeaturesLayout = styled.div`
   position: relative;
   width: 100%;
-  height: 40rem;
+  height: 30rem;
   display: flex;
   justify-content: space-between;
   margin-top: 10rem;
-  /* @media ${props => props.theme.mediaQueries.small} {
+
+  @media ${props => props.theme.mediaQueries.small} {
     flex-direction: column;
     justify-content: center;
   }
   @media ${props => props.theme.mediaQueries.small} {
     margin-top: 0rem;
-    height: 60rem;
-  } */
+    height: 100%;
+  }
 `
 const FirstCol = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 40%;
+  @media ${props => props.theme.mediaQueries.tablet} {
+    width: 47%;
+  }
+  @media ${props => props.theme.mediaQueries.small} {
+    width: 100%;
+  }
   /* @media ${props => props.theme.mediaQueries.medium} {
     width: 70%;
     margin-bottom: 4rem;
@@ -40,6 +47,12 @@ const SecondCol = styled.div`
   flex-direction: column;
   justify-content: space-between;
   width: 40%;
+  @media ${props => props.theme.mediaQueries.tablet} {
+    width: 47%;
+  }
+  @media ${props => props.theme.mediaQueries.small} {
+    width: 100%;
+  }
   /* @media ${props => props.theme.mediaQueries.medium} {
     width: 70%;
 
@@ -53,22 +66,28 @@ const ProgramLeft = styled.div`
   /* height: 40%; */
   display: flex;
   justify-content: space-between;
-  /* @media ${props => props.theme.mediaQueries.medium} {
+  @media ${props => props.theme.mediaQueries.small} {
     flex-direction: row-reverse;
-  } */
+    margin-bottom: 3rem;
+  }
 `
 const ProgramRight = styled.div`
-  height: 40%;
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
+  @media ${props => props.theme.mediaQueries.small} {
+    margin-bottom: 3rem;
+  }
 `
 const Text = styled.div`
   width: 70%;
   text-align: ${props => (props.primary ? "right" : "left")};
-  /* @media ${props => props.theme.mediaQueries.medium} {
+  @media ${props => props.theme.mediaQueries.tablet} {
+    width: 80%;
+  }
+  @media ${props => props.theme.mediaQueries.small} {
     text-align: left;
-  } */
+  }
 `
 
 const Title = styled.h4`
@@ -85,9 +104,18 @@ const TextP = styled.p`
 const Icon = styled.div`
   width: 10rem;
   height: 10rem;
+  align-self: center;
   & svg {
     width: 100%;
     height: auto;
+  }
+  @media ${props => props.theme.mediaQueries.large} {
+    width: 8rem;
+    height: 8rem;
+  }
+  @media ${props => props.theme.mediaQueries.tablet} {
+    width: 6rem;
+    height: 6rem;
   }
 `
 const Span = styled.span`

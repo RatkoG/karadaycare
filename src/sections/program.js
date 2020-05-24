@@ -17,11 +17,14 @@ const StyledSun = styled(Sun)`
   left: 0;
   width: 18rem;
   height: 18rem;
-  /* @media ${props => props.theme.mediaQueries.largest} {
-    left: 20px;
-    width: 15rem;
-    height: 15rem;
-  } */
+  @media ${props => props.theme.mediaQueries.medium} {
+    left: 4rem;
+    width: 10rem;
+    height: 10rem;
+  }
+  @media ${props => props.theme.mediaQueries.small} {
+    display: none;
+  }
 `
 
 const StyledContained = styled(Contained)`
@@ -33,18 +36,24 @@ const StyledRocket = styled(Rocket)`
   top: 0;
   right: 0;
   width: 18rem;
-  /* height: 18rem;
-  @media ${props => props.theme.mediaQueries.largest} {
-    right: 20px;
-    width: 15rem;
-    height: 15rem;
-  } */
+
+  @media ${props => props.theme.mediaQueries.medium} {
+    right: 4rem;
+    width: 10rem;
+    height: 10rem;
+  }
+  @media ${props => props.theme.mediaQueries.small} {
+    display: none;
+  }
 `
 const HeadingText = styled.h3`
-  width: 47%;
+  width: 43%;
   font-size: 1.6rem;
   color: ${props => props.theme.colors.text};
   margin: auto;
+  @media ${props => props.theme.mediaQueries.small} {
+    width: 100%;
+  }
 `
 
 const Program = ({ text }) => {
@@ -57,8 +66,8 @@ const Program = ({ text }) => {
           <H3 title="Things for kids " />
           <H2 title="Our program" primary={true} />
           <HeadingText>
-            Flexible schedule ajusted accorgin to the children’s needs and
-            interes. The number one goal is leadning.
+            Flexible schedule adjusted according to the children’s needs and
+            interests. The number one goal is learning.
           </HeadingText>
         </Heading>
         <Features></Features>
