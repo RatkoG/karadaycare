@@ -33,8 +33,8 @@ const Footer = () => {
           <CopyRight>
             KARA Family Day Care &copy; 2020 All Rights Reserved{" "}
           </CopyRight>
-          <Links to="/testPage"> Terms &amp; Conditions </Links>
-          <Links to="/privacy"> Privacy Policy </Links>
+          {/* <Links to="/testPage"> Terms &amp; Conditions </Links>
+          <Links to="/privacy"> Privacy Policy </Links> */}
         </Wrapper>
       </Contained>
     </Section>

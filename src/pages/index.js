@@ -27,12 +27,12 @@ const TextWrapper = styled.div`
 const StyledP = styled.p`
   color: ${props => props.theme.colors.headingMain};
   font-size: 3.2rem;
-
+  margin-bottom: 3rem;
+}
   @media ${props => props.theme.mediaQueries.medium} {
 
   @media ${props => props.theme.mediaQueries.tablet} {
     font-size: 2.2rem;
-
   }
 `
 
