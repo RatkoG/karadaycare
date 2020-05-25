@@ -5,15 +5,14 @@ const StyledCard = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 23%;
-  height: 30rem;
+  width: 26rem;
+  height: 26rem;
   padding: 2rem;
   align-items: center;
   border-radius: 20px;
   margin: 0 2rem;
   margin-bottom: 3rem;
   box-shadow: 10px 15px 55px 0 rgba(0, 0, 0, 0.3);
-  /* flex-wrap: wrap; */
 `
 
 const StyledTitle = styled.h1`

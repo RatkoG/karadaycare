@@ -12,7 +12,12 @@ const StyledImage = styled(Img)`
   @media ${props => props.theme.mediaQueries.large} {
     width: 20rem;
   }
-  @media ${props => props.theme.mediaQueries.small} {
+
+  @media ${props => props.theme.mediaQueries.medium} {
+    right: 3rem;
+  }
+
+  @media ${props => props.theme.mediaQueries.tablet} {
     display: none;
   }
 `

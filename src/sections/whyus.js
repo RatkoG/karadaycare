@@ -20,11 +20,14 @@ const StyledContained = styled(Contained)`
   margin: 5rem auto;
   @media ${props => props.theme.mediaQueries.tablet} {
     flex-direction: column-reverse;
+
+  }
+  /* @media ${props => props.theme.mediaQueries.tablet} {
     align-items: center;
   }
   @media ${props => props.theme.mediaQueries.smaller} {
     justify-content: center;
-  }
+  } */
 `
 
 const Content = styled.div`
@@ -33,14 +36,14 @@ const Content = styled.div`
   align-items: center;
   width: 45%;
   @media ${props => props.theme.mediaQueries.largest} {
-    width: 50%;
+    width: 60%;
   }
   @media ${props => props.theme.mediaQueries.tablet} {
-    width: 80%;
+    width: 100%;
   }
-  /* @media ${props => props.theme.mediaQueries.smaller} {
-    width: 80%;
-  } */
+  @media ${props => props.theme.mediaQueries.small} {
+    width: 100%;
+  }
 `
 
 const H1 = styled.h2`
@@ -50,13 +53,11 @@ const H1 = styled.h2`
   font-weight: 400;
   text-transform: capitalize;
   margin-bottom: 6rem;
-  @media ${props => props.theme.mediaQueries.small} {
-    font-size: 4.5rem;
+
+  @media ${props => props.theme.mediaQueries.smaller} {
+    font-size: 3.9rem;
     margin-bottom: 3rem;
   }
-  /* @media ${props => props.theme.mediaQueries.smaller} {
-    font-size: 3rem;
-  } */
 `
 const Paragraph = styled.p`
   text-align: center;

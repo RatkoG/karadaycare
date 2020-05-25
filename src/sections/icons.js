@@ -12,7 +12,7 @@ const StyledContained = styled(Contained)`
   justify-content: space-around;
   flex-wrap: wrap;
   height: 34rem;
-  align-content: space-around;
+  /* align-content: space-around; */
 `
 const H3 = styled.h3`
   color: ${props => props.theme.colors.orange};
@@ -20,21 +20,24 @@ const H3 = styled.h3`
   font-family: "Londrina Solid";
   font-weight: 400;
   @media ${props => props.theme.mediaQueries.medium} {
+   font-size:2.4rem;
+  }
+  /* @media ${props => props.theme.mediaQueries.medium} {
     font-size: 2.7rem;
   }
   @media ${props => props.theme.mediaQueries.small} {
     font-size: 2.4rem;
-  }
+  } */
 `
 const Icon = styled.div`
   width: 13rem;
   height: 13rem;
   margin-bottom: 2rem;
-  @media ${props => props.theme.mediaQueries.large} {
+  /* /* @media ${props => props.theme.mediaQueries.large} {
     width: 10rem;
     height: 10rem;
-  }
-  @media ${props => props.theme.mediaQueries.small} {
+  } */
+  @media ${props => props.theme.mediaQueries.medium} {
     width: 8rem;
     height: 8rem;
   }
@@ -47,9 +50,10 @@ const Box = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-self: center;
 
   @media ${props => props.theme.mediaQueries.smaller} {
-    width: 40%;
+    width: 50%;
   }
 `
 

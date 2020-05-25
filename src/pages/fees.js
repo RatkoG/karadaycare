@@ -21,7 +21,7 @@ const SectionTitle = styled(StyledSection)`
 const FeesWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin-top: 6rem;
 `
 // import Layout from "../components/layout"

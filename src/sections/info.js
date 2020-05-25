@@ -52,6 +52,9 @@ const Title = styled.h1`
   font-family: "Londrina Solid";
   font-size: 6.4rem;
   margin: 2rem 0;
+  @media ${props => props.theme.mediaQueries.smaller} {
+    font-size: 3.9rem;
+  }
 `
 
 const Info = () => {

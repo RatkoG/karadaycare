@@ -5,13 +5,16 @@ import Img from "gatsby-image"
 
 const StyledImage = styled(Img)`
   width: 19rem;
-  height: 30rem;
-  top: 50%;
+  /* height: 30rem; */
+  top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
   user-select: none;
   overflow: hidden;
-  @media ${props => props.theme.mediaQueries.medium} {
+  @media ${props => props.theme.mediaQueries.large} {
+    width: 14rem;
+  }
+  @media ${props => props.theme.mediaQueries.tablet} {
     display: none;
   }
 `

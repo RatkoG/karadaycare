@@ -9,20 +9,15 @@ const theme = {
     whiteIsh: "#F9F8F3",
     whiteWhySection: "rgba(249, 248, 243,0.9)",
     green: "#6DD800",
+    white: "#fff",
   },
   mediaQueries: {
-    SMALL: `only screen and (max-width: 25em)`,
-    MEDIUM: `only screen and (max-width: 37.5em)`,
-    tablet: `only screen and (max-width: 43.75em)`,
-    LARGE: `only screen and (max-width: 56.25em)`,
-    LARGEST: `only screen and (max-width:75em)`, //1200px
-    smallest: `only screen and (max-width: 26.60em)`,
-    smaller: "only screen and (max-width: 31.25em)",
-    small: "only screen and (max-width: 37.5em)",
-    medium: "only screen and (max-width: 48em)",
-    large: "only screen and (max-width: 56.25em)",
-
-    largest: "only screen and (max-width: 64em)",
+    smallest: `only screen and (max-width: 25em)`, //400px
+    smaller: "only screen and (max-width: 31.25em)", //500px
+    small: "only screen and (max-width: 37.5em)", //600px
+    tablet: "only screen and (max-width: 48em)", //768px
+    medium: "only screen and (max-width: 56.25em)", //900px
+    large: "only screen and (max-width: 64em)", //1024px
   },
 }
 export default theme

@@ -40,11 +40,19 @@ const InfoSection = styled.div`
   justify-content: space-between;
   align-items: center;
   @media ${props => props.theme.mediaQueries.large} {
+
+    font-size: 1.9rem;
+  }
+  @media ${props => props.theme.mediaQueries.medium} {
+    font-size: 1.2rem;
+
     font-size: 1.6rem;
   }
   @media ${props => props.theme.mediaQueries.medium} {
     font-size: 1.4rem;
+
   }
+
   & svg {
     fill: currentColor;
     width: 1em;
@@ -54,6 +62,7 @@ const InfoSection = styled.div`
 `
 const Navbar = ({ noShowOnPage }) => {
   const [Mobile, setMobile] = useState(false)
+  const [menuOpened, setMenuOpened] = useState(false)
 
   const changeMobile = () => {
     window.matchMedia("(max-width:37.5em)").matches
@@ -80,7 +89,7 @@ const Navbar = ({ noShowOnPage }) => {
             <Logo />
           </AnchorLink>
           {Mobile ? (
-            <MobileMenu />
+            <MobileMenu menuOpened={menuOpened} setMenuOpened={setMenuOpened} />
           ) : (
             <DesktopMenu noShowOnPage={noShowOnPage} />
           )}

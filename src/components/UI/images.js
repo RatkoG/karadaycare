@@ -9,11 +9,16 @@ const ImageHolder = styled.div`
   justify-content: space-between;
   height: 52rem;
   width: 50%;
-  @media ${props => props.theme.mediaQueries.tablet} {
-    height: 42rem;
-    width: 60%;
+  @media ${props => props.theme.mediaQueries.large} {
+    justify-content: space-evenly;
+    width: 35%;
   }
-  @media ${props => props.theme.mediaQueries.smaller} {
+  @media ${props => props.theme.mediaQueries.tablet} {
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+  }
+  @media ${props => props.theme.mediaQueries.small} {
     display: none;
   }
 `
@@ -25,7 +30,7 @@ const Image = styled(Img)`
   border-radius: 2rem;
   box-shadow: 29px 22px 22px 0 rgba(0, 0, 0, 0.3);
 
-  @media ${props => props.theme.mediaQueries.tablet} {
+  @media ${props => props.theme.mediaQueries.large} {
     width: 25rem;
   }
 `
