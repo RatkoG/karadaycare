@@ -6,7 +6,10 @@ const TitleStyle = styled.h1`
   font-family: "Londrina Solid";
   font-size: 6.4rem;
   font-weight: 900;
-  @media ${props => props.theme.mediaQueries.medium} {
+  @media ${props => props.theme.mediaQueries.tablet} {
+    font-size: 4.2rem;
+  }
+  @media ${props => props.theme.mediaQueries.small} {
     font-size: 3.9rem;
   }
 `

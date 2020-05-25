@@ -10,6 +10,10 @@ const StyledH2 = styled.h2`
   text-transform: capitalize;
   margin-bottom: 1rem;
   text-align:center;
+  @media ${props => props.theme.mediaQueries.smaller} {
+    font-size: 3.9rem;
+    /* margin-bottom: 3rem; */
+  }
 `
 
 const H2 = ({ title, primary }) => {

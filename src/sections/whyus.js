@@ -53,13 +53,11 @@ const H1 = styled.h2`
   font-weight: 400;
   text-transform: capitalize;
   margin-bottom: 6rem;
-  /* @media ${props => props.theme.mediaQueries.small} {
-    font-size: 4.5rem;
+
+  @media ${props => props.theme.mediaQueries.smaller} {
+    font-size: 3.9rem;
     margin-bottom: 3rem;
-  } */
-  /* @media ${props => props.theme.mediaQueries.smaller} {
-    font-size: 3rem;
-  } */
+  }
 `
 const Paragraph = styled.p`
   text-align: center;
