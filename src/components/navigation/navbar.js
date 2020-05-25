@@ -55,7 +55,6 @@ const InfoSection = styled.div`
 `
 const Navbar = ({ noShowOnPage }) => {
   const [Mobile, setMobile] = useState(false)
-  const [menuOpened, setMenuOpened] = useState(false)
 
   const changeMobile = () => {
     window.matchMedia("(max-width:37.5em)").matches
@@ -82,7 +81,7 @@ const Navbar = ({ noShowOnPage }) => {
             <Logo />
           </AnchorLink>
           {Mobile ? (
-            <MobileMenu menuOpened={menuOpened} setMenuOpened={setMenuOpened} />
+            <MobileMenu />
           ) : (
             <DesktopMenu noShowOnPage={noShowOnPage} />
           )}

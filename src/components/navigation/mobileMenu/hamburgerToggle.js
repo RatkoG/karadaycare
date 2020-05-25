@@ -100,15 +100,9 @@ const StyledInner = styled.span`
   }
   /* } */
 `
-const HamburgerMenu = ({ toggleChange, menuOpened }) => {
-  const isActive = "is-active"
+const HamburgerMenu = () => {
   return (
-    <StyledButton
-      className=""
-      type="button"
-      className={menuOpened ? isActive : ""}
-      onClick={toggleChange}
-    >
+    <StyledButton className="">
       <StyledBox className="hamburger-box">
         <StyledInner className="hamburger-inner"></StyledInner>
       </StyledBox>
