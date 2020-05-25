@@ -9,6 +9,7 @@ const theme = {
     whiteIsh: "#F9F8F3",
     whiteWhySection: "rgba(249, 248, 243,0.9)",
     green: "#6DD800",
+    white: "#fff",
   },
   mediaQueries: {
     smallest: `only screen and (max-width: 25em)`, //400px
