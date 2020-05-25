@@ -17,9 +17,6 @@ const Wrapper = styled.div`
 `
 
 const StyledMain = styled.main`
-/* TESTING IS NOT WORKING NOW */
-  /* margin-top: ${({ Mobile }) => (Mobile ? "6rem" : "12rem")}; */
-  margin-top: 12rem;
   display: flex;
   flex-direction: column;
   flex: 1;
