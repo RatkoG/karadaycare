@@ -64,7 +64,7 @@ const Fees = () => (
             price="&#36; 500 "
             per="per month"
           />
-          <Fee title="Part time" price="&#36; 45" per="per day" />
+          <Fee title="Part-time" price="&#36; 45" per="per day" />
           <Fee
             title="Hourly"
             price="&#36; 10"

@@ -142,8 +142,8 @@ const Features = () => {
           <Text primary="right">
             <Title>Educational Activities</Title>
             <TextP>
-              We go trough a lot of mathematical concepts. A variety of learning
-              activities are provided to make learning more fun.
+              We go through a lot of mathematical concepts. A variety of
+              learning activities are provided to make learning more fun.
             </TextP>
           </Text>
           <Icon>

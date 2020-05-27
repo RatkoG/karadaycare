@@ -82,15 +82,15 @@ const WhyUs = () => {
             We are committed to creating a safe, warm, loving environment for
             children where they can learn and grow physically, emotionally,
             creatively, intellectually, and socially at their own pace. We want
-            to help your child increase their confidence, and self esteem by
+            to help your child increase their confidence, and self-esteem by
             treating them as unique individuals, and allowing them to express
             themselves in a variety of facets. We strive to make your child’s
             time at daycare the best experience it can be for them as well as
             you, the parents. We will help children to obtain new knowledge to
             socialize easily. Our role is to provide interesting, play-based
-            indoor and outdoor experiences with high level of responsibilities
-            for each child. I believe that children’s family is the first and
-            the most important environment for nurturing them.
+            indoor and outdoor experiences with a high level of responsibilities
+            for each child. I believe that the children’s family is the first
+            and the most important environment for nurturing them.
           </Paragraph>
         </Content>
       </StyledContained>

@@ -21,7 +21,12 @@ const StylerP = styled.p`
 
 const InfoNavbar = () => (
   <>
-    <StyledTest href={"#"}>
+    <StyledTest
+      href={
+        "https://www.google.com/maps/place/1619+Acadia+Dr,+Saskatoon,+SK+S7H+5K7/@52.10612,-106.598212,18z/data=!4m5!3m4!1s0x5304f160b689ea41:0xc6dad17b28d38a99!8m2!3d52.105969!4d-106.5987159?hl=en"
+      }
+      target="_blank"
+    >
       <LocationIcon />
       1619 Acadia Drive, Saskatoon, SK, S7H 5K7
     </StyledTest>
