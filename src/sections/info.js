@@ -12,6 +12,7 @@ import Boy from "../components/UI/boy"
 import LocationIcon from "../images/location.svg"
 import ClockIcon from "../images/clock.svg"
 import MobileIcon from "../images/mobile.svg"
+import EmailIcon from "../images/email.svg"
 
 const StyledTest = styled.a`
   text-decoration: none;
@@ -39,13 +40,18 @@ const InfoSection = styled.div`
   flex-direction: column;
   text-align: center;
 
-  & a {
+  & a,
+  p {
     margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   & svg {
     fill: currentColor;
     width: 1em;
     height: 1em;
+    margin-right: 0.5rem;
   }
 `
 
@@ -78,6 +84,10 @@ const Info = () => {
           <StyledTest href={"tel:6399989330"}>
             <MobileIcon />
             639 998 9330
+          </StyledTest>
+          <StyledTest href={"mailto:karafdc@gmail.com"}>
+            <EmailIcon />
+            karafdc@gmail.com
           </StyledTest>
           <StylerP>
             <ClockIcon />

@@ -13,7 +13,7 @@ const StyledContainer = styled(Contained)`
 `
 
 const StyledHome = styled(StyledSection)`
-  min-height: ${props => (props.primary ? "75vh" : " 40vh")};
+  min-height: ${props => (props.primary ? "95vh" : " 40vh")};
   background: ${props => props.theme.colors.blueLight};
   & > svg {
     position: absolute;

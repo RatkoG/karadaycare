@@ -40,7 +40,6 @@ const InfoSection = styled.div`
   justify-content: space-between;
   align-items: center;
   @media ${props => props.theme.mediaQueries.large} {
-
     font-size: 1.9rem;
   }
   @media ${props => props.theme.mediaQueries.medium} {
@@ -50,7 +49,12 @@ const InfoSection = styled.div`
   }
   @media ${props => props.theme.mediaQueries.medium} {
     font-size: 1.4rem;
-
+  }
+  & a,
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   & svg {
