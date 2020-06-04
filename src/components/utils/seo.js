@@ -1,9 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Helmet from "react-helmet"
+import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-const SEO = ({ lang, title }) => {
+const SEO = ({ meta, lang, title }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -67,7 +67,16 @@ const SEO = ({ lang, title }) => {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ]}
+      ]
+        .concat([
+          {
+            property: "og:image",
+          },
+          {
+            name: "twitter:image",
+          },
+        ])
+        .concat(meta)}
     />
   )
 }
