@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout/layout.js"
-// import SEO from "../components/seo"
 
 import { StyledSection, Contained } from "../components/layout/elements"
 
@@ -20,7 +19,6 @@ const StyledP = styled.p`
 `
 const NotFoundPage = () => (
   <Layout noShowOnPage>
-    {/* <SEO title="404: Not found" /> */}
     <Section fullHeight>
       <H1>NOT FOUND</H1>
       <StyledP>
