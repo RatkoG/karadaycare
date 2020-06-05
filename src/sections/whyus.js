@@ -4,6 +4,7 @@ import { StyledSection, Contained } from "../components/layout/elements"
 // import Pattern from "../images/pattern.svg"
 import Pattern from "../images/patternTest.png"
 import Images from "../components/UI/images"
+import ButtonLink from "../components/UI/button"
 
 const Section = styled(StyledSection)`
 background-image:  linear-gradient(to right, ${props =>
@@ -66,6 +67,7 @@ const Paragraph = styled.p`
   font-size: 1.6rem;
   line-height: 2;
   padding: 1rem;
+  /* margin-bottom:2rem; */
   /* @media ${props => props.theme.mediaQueries.smaller} {
     font-size: 1.3rem;
   } */
@@ -92,6 +94,7 @@ const WhyUs = () => {
             for each child. I believe that the children’s family is the first
             and the most important environment for nurturing them.
           </Paragraph>
+          <ButtonLink to="/about">Why Us</ButtonLink>
         </Content>
       </StyledContained>
     </Section>
