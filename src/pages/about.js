@@ -29,7 +29,7 @@ const Paragraph = styled.p`
 `
 const About = () => (
   <Layout>
-    <Home>
+    <Home id="about">
       <StyledContained>
         <Title title="About us" />
       </StyledContained>

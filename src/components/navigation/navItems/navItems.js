@@ -56,23 +56,25 @@ const NavLi = styled.li`
   }
 `
 
-const NavItems = ({ mobile }) => {
+const NavItems = ({ mobile, clicked }) => {
+  const clickEvent = e => {
+    console.log(e.target, e.currentTarget)
+    if (e.currentTarget) {
+      // swmenuOpened: false
+    }
+  }
   return (
     <StyledNav mobile={mobile}>
       <NavUl mobile={mobile}>
-        <NavLi>
-          <AnchorLink
-            to="/#home"
-            stripHash
-            onClick={console.log("Menu Should close")}
-          >
+        <NavLi onClick={clicked}>
+          <AnchorLink to="/#home" stripHash>
             Home
           </AnchorLink>
         </NavLi>
         <NavLi>
           <AnchorLink to="/about">About Us</AnchorLink>
         </NavLi>
-        <NavLi>
+        <NavLi onClick={clicked}>
           <AnchorLink to="/#program" stripHash>
             Program
           </AnchorLink>

@@ -30,7 +30,7 @@ const FeesWrapper = styled.div`
 
 const Fees = () => (
   <Layout>
-    <Home>
+    <Home id="fees">
       <StyledContained>
         <Title title="We are providing subsidy" />
       </StyledContained>
