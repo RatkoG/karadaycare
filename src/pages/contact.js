@@ -18,7 +18,7 @@ const StyledContained = styled(Contained)`
 
 const Contact = () => (
   <Layout>
-    <Home>
+    <Home id="contact">
       <StyledContained>
         <Title title="Contact Us" />
       </StyledContained>

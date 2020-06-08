@@ -27,7 +27,7 @@ const SideDrawer = ({ setMenuOpened, ...rest }) => {
   return (
     <BackgroundWrapper {...rest} menuOpened={true}>
       <Wrapper>
-        <NavItems mobile />
+        <NavItems mobile clicked={() => setMenuOpened(false)} />
       </Wrapper>
     </BackgroundWrapper>
   )
