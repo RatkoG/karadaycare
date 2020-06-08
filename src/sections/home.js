@@ -5,15 +5,15 @@ import Img from "gatsby-image"
 
 import { StyledSection, Contained } from "../components/layout/elements"
 import CloudIcon from "../images/cloud.svg"
-import Title from "../components/UI/Title"
 const StyledContainer = styled(Contained)`
   display: flex;
   justify-content: space-evenly;
-  z-index: 3;
+  z-index: 8;
 `
 
 const StyledHome = styled(StyledSection)`
-  min-height: ${props => (props.primary ? "95vh" : " 60vh")};
+  /* min-height: ${props => (props.primary ? "95vh" : " 60vh")}; */
+  min-height: 80rem;
   background: ${props => props.theme.colors.blueLight};
   & > svg {
     position: absolute;
@@ -23,33 +23,30 @@ const StyledHome = styled(StyledSection)`
   }
 `
 
-const Subtitle = styled.h2`
-  color: ${props => props.theme.colors.headingMain};
-  font-family: "Londrina Solid";
-  font-size: 3.2rem;
-`
-const StyledTextSection = styled.div`
-  text-align: center;
-`
-const StyledImageSection = styled.div`
-  height: 3rem;
-  background: red;
-  width: 50%;
-`
-
 const StyledImg = styled(Img)`
   width: 80%;
   height: 100%;
 `
 
-const StyledCloud = styled(CloudIcon)`
+// const StyledCloud = styled(CloudIcon)`
+//   position: absolute;
+//   opacity: 0.7;
+// `
+const CloudBox = styled.div`
   position: absolute;
-  opacity: 0.7;
+  width: 40rem;
+  /* height: 20rem; */
+
+  & svg {
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+  }
 `
 
-const CloudOne = styled(StyledCloud)`
-  top: 0;
-  left: 40rem;
+const CloudOne = styled(CloudBox)`
+  top: 10rem;
+  left: 20rem;
   @media ${props => props.theme.mediaQueries.large} {
     left: 10rem;
   }
@@ -57,31 +54,26 @@ const CloudOne = styled(StyledCloud)`
     left: -3rem;
   } */
 `
-const CloudTwo = styled(StyledCloud)`
+const CloudTwo = styled(CloudBox)`
   top: 6rem;
   right: 3rem;
   /* @media ${props => props.theme.mediaQueries.medium} {
     right: -16rem;
   } */
 `
-const CloudThree = styled(StyledCloud)`
+const CloudThree = styled(CloudBox)`
   bottom: 9rem;
   right: 16rem;
   /* @media ${props => props.theme.mediaQueries.medium} {
     right: -10rem;
   } */
 `
-const CloudFour = styled(StyledCloud)`
+const CloudFour = styled(CloudBox)`
   bottom: 2rem;
   left: 13rem;
   /* @media ${props => props.theme.mediaQueries.medium} {
     left: -6rem;
   } */
-`
-const CloudBox = styled.div`
-  position: absolute;
-  width: 100%;
-  height: 100%;
 `
 
 const WaveBox = styled.div`
@@ -109,18 +101,19 @@ const Home = ({ children, primary }) => {
   return (
     <StyledHome id="home" primary={primary}>
       <StyledContainer>{children}</StyledContainer>
-      <CloudBox>
-        <CloudOne />
-      </CloudBox>
-      <CloudBox>
-        <CloudTwo />
-      </CloudBox>
-      <CloudBox>
-        <CloudThree />
-      </CloudBox>
-      <CloudBox>
-        <CloudFour />
-      </CloudBox>
+      <CloudOne>
+        <CloudIcon />
+      </CloudOne>
+      <CloudTwo>
+        <CloudIcon />
+      </CloudTwo>
+      <CloudThree>
+        <CloudIcon />
+      </CloudThree>
+      <CloudFour>
+        <CloudIcon />
+      </CloudFour>
+
       <WaveBox>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
           <path
