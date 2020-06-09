@@ -12,12 +12,10 @@ const StyledContainer = styled(Contained)`
 `
 
 const StyledHome = styled(StyledSection)`
-  /* min-height: ${props => (props.primary ? "95vh" : " 60vh")}; */
-  min-height: 80rem;
+  min-height: ${props => (props.primary ? "90rem" : " 60rem")};
   background: ${props => props.theme.colors.blueLight};
   & > svg {
     position: absolute;
-    bottom: 0;
     width: 100%;
     fill: white;
   }
@@ -28,52 +26,43 @@ const StyledImg = styled(Img)`
   height: 100%;
 `
 
-// const StyledCloud = styled(CloudIcon)`
-//   position: absolute;
-//   opacity: 0.7;
-// `
 const CloudBox = styled.div`
   position: absolute;
   width: 40rem;
-  /* height: 20rem; */
-
   & svg {
     width: 100%;
     height: 100%;
     opacity: 0.6;
   }
+  @media ${props => props.theme.mediaQueries.large} {
+    width: 30rem;
+  }
+  @media ${props => props.theme.mediaQueries.smaller} {
+    width: 23rem;
+  }
 `
 
 const CloudOne = styled(CloudBox)`
-  top: 10rem;
-  left: 20rem;
-  @media ${props => props.theme.mediaQueries.large} {
-    left: 10rem;
-  }
-  /* @media ${props => props.theme.mediaQueries.medium} {
-    left: -3rem;
-  } */
+  top: -14rem;
+  left: -5rem;
 `
 const CloudTwo = styled(CloudBox)`
-  top: 6rem;
+  top: -7rem;
   right: 3rem;
-  /* @media ${props => props.theme.mediaQueries.medium} {
-    right: -16rem;
-  } */
 `
 const CloudThree = styled(CloudBox)`
-  bottom: 9rem;
+  bottom: -16rem;
   right: 16rem;
-  /* @media ${props => props.theme.mediaQueries.medium} {
-    right: -10rem;
-  } */
+  @media ${props => props.theme.mediaQueries.small} {
+    right: 2rem;
+  }
 `
 const CloudFour = styled(CloudBox)`
-  bottom: 2rem;
+  bottom: -20rem;
   left: 13rem;
-  /* @media ${props => props.theme.mediaQueries.medium} {
-    left: -6rem;
-  } */
+  @media ${props => props.theme.mediaQueries.small} {
+    left: 2rem;
+  }
 `
 
 const WaveBox = styled.div`
@@ -100,19 +89,21 @@ const ChildrenImg = () => {
 const Home = ({ children, primary }) => {
   return (
     <StyledHome id="home" primary={primary}>
-      <StyledContainer>{children}</StyledContainer>
-      <CloudOne>
-        <CloudIcon />
-      </CloudOne>
-      <CloudTwo>
-        <CloudIcon />
-      </CloudTwo>
-      <CloudThree>
-        <CloudIcon />
-      </CloudThree>
-      <CloudFour>
-        <CloudIcon />
-      </CloudFour>
+      <StyledContainer>
+        {children}
+        <CloudOne>
+          <CloudIcon />
+        </CloudOne>
+        <CloudTwo>
+          <CloudIcon />
+        </CloudTwo>
+        <CloudThree>
+          <CloudIcon />
+        </CloudThree>
+        <CloudFour>
+          <CloudIcon />
+        </CloudFour>
+      </StyledContainer>
 
       <WaveBox>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
