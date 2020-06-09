@@ -7,7 +7,7 @@ const StyledImg = styled(Img)`
   width: 50rem;
   height: 100%;
   align-self: center;
-
+  z-index: 5;
   @media ${props => props.theme.mediaQueries.large} {
     width: 40rem;
   }

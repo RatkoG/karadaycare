@@ -7,13 +7,12 @@ import Images from "../components/UI/images"
 import ButtonLink from "../components/UI/button"
 
 const Section = styled(StyledSection)`
-background-image:  linear-gradient(to right, ${props =>
-  props.theme.colors.whiteWhySection},${props =>
-  props.theme.colors.whiteWhySection}),url(${Pattern});
-  /* background-image: url(${Pattern});
-  background-color: ${props => props.theme.colors.whiteIsh}; */
-  /* opacity: 8; */
-
+  background-image: linear-gradient(
+      to right,
+      ${props => props.theme.colors.whiteWhySection},
+      ${props => props.theme.colors.whiteWhySection}
+    ),
+    url(${Pattern});
 `
 const StyledContained = styled(Contained)`
   display: flex;
@@ -21,14 +20,7 @@ const StyledContained = styled(Contained)`
   margin: 5rem auto;
   @media ${props => props.theme.mediaQueries.tablet} {
     flex-direction: column-reverse;
-
   }
-  /* @media ${props => props.theme.mediaQueries.tablet} {
-    align-items: center;
-  }
-  @media ${props => props.theme.mediaQueries.smaller} {
-    justify-content: center;
-  } */
 `
 
 const Content = styled.div`

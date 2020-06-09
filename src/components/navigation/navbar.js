@@ -78,6 +78,7 @@ const Navbar = ({ noShowOnPage }) => {
     window.addEventListener("resize", changeMobile)
     return () => window.removeEventListener("resize", changeMobile)
   }, [])
+
   return (
     <StyledHeader>
       <Contained>
