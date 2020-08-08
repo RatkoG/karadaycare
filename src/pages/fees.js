@@ -12,6 +12,7 @@ import Home from "../sections/home"
 const StyledContained = styled(Contained)`
   text-align: center;
   margin: 7rem auto;
+  z-index: 10;
 `
 const SectionTitle = styled(StyledSection)`
   background: ${props => props.theme.colors.blueLight};
@@ -42,29 +43,29 @@ const Fees = () => (
           <Fee
             title="Infant"
             subtitle="2-18 months"
-            price="&#36; 750"
+            price="&#36; 800"
             per="per month"
           />
           <Fee
             title="Toddler"
             subtitle="19 months - 3 years"
-            price="&#36; 700"
+            price="&#36; 800"
             per="per month"
           />
           <Fee
             title="Preschool"
             subtitle="3-15 years"
-            price="&#36; 650 "
+            price="&#36; 700 "
             per="per month"
           />
-          <Fee title="Kindergarten" price="&#36; 500" per="per month" />
+          <Fee title="Kindergarten" price="&#36; 700" per="per month" />
           <Fee
             title="School Age"
             subtitle="All Ages"
-            price="&#36; 500 "
+            price="&#36; 650 "
             per="per month"
           />
-          <Fee title="Part-time" price="&#36; 45" per="per day" />
+          <Fee title="Part-time" price="&#36; 50" per="per day" />
           <Fee
             title="Hourly"
             price="&#36; 10"
