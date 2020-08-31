@@ -54,7 +54,7 @@ const Fees = () => (
           />
           <Fee
             title="Preschool"
-            subtitle="3-15 years"
+            subtitle="3-5 years"
             price="&#36; 700 "
             per="per month"
           />
