@@ -25,21 +25,21 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Londrina Solid`,
-            variants: [`300`, `400`, `900`],
-          },
-          {
-            family: `Lato`,
-            variants: [`400`, `400i`, `700`],
-          },
-        ],
-      },
-    },
+    // {
+      
+    //   options: {
+    //     fonts: [
+    //       {
+    //         family: `Londrina Solid`,
+    //         variants: [`300`, `400`, `900`],
+    //       },
+    //       {
+    //         family: `Lato`,
+    //         variants: [`400`, `400i`, `700`],
+    //       },
+    //     ],
+    //   },
+    // },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
